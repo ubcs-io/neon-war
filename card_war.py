@@ -288,7 +288,7 @@ HTML_TEMPLATE = """
 <body>
 
     <canvas id="gameCanvas"></canvas>
-    <button id="debug-btn">?</button>
+    <button id="debug-btn">Dx</button>
 
     <div id="start-menu">
         <div class="menu-title">NEON WAR</div>
@@ -1191,7 +1191,7 @@ initializeBtn.addEventListener('click', async () => {
     initializeBtn.textContent = 'SEQUENCING';
     initializeBtn.disabled = true;
     
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     startMenu.classList.add('hidden');
     gameInitialized = true;
